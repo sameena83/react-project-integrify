@@ -1,0 +1,40 @@
+.image__container{
+    display:flex;
+    flex-direction:row;
+    margin-top:10px;
+    margin-right:10px;
+    margin-left:20px;
+    padding:5px;
+    height:500px;
+    background-color:rgb(127, 186, 231);
+
+
+}
+.dark{
+    background-color:blue;
+}
+.image__description{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.title{
+    margin-top: 20px;
+    font-size:50px;
+    font-family: 'josefin Sans';
+}
+.desc{
+    margin-top: 20px;
+    font-size:30px;
+    font-family: 'josefin Sans';
+    line-height: 30px;
+    
+
+}
+
+.image__portion{
+    width:800px;
+    
+}

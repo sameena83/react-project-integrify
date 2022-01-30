@@ -1,0 +1,24 @@
+.header__component{
+    display:flex;
+    justify-content: space-between;
+    height:70px;
+    background-color:rgb(27, 8, 8) !important;
+    
+}
+.ul__element{
+ list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  }
+  .li__element{
+      margin-top: 10px;
+      margin-right: 15px;
+      color:rgb(50, 83, 83);
+      font-size:25px;
+  }
+  .fa-icons{
+      margin-top: 10px;
+      font-size: 40px;
+      color:rgb(66, 124, 18)
+  }

@@ -1,23 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
 
+import './App.css';
+import {useState,useEffect} from 'react';
+import Header from './Components/Header/Header';
+import MainPage from './Components/MainPage/MainPage';
+import DisplayHome from './Components/DisplayPicture/DisplayHome';
+
+
 function App() {
+  const[user,setUser]=useState([]);
+  useEffect(()=> {
+    fetch("https://fakestoreapi.com/products")
+    .then((response)=>response.json())
+    .then((data)=>setUser(data));
+  },[]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <MainPage/>
+      <DisplayHome userInfo={user} />
+      
+     
     </div>
   );
 }
